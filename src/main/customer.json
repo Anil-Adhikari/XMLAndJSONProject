@@ -1,0 +1,22 @@
+{
+  "customerId" : 1002,
+  "customerName" : "Anil Adhikari",
+  "dateOfBirth" : "2018-10-19",
+  "annualSalary" : 80000.0,
+  "address" : [ {
+    "addressId" : 101,
+    "addressLine1" : "6445 Love Dr.",
+    "addressLine2" : "",
+    "city" : "Irving",
+    "state" : "Texas",
+    "zipCode" : "75038",
+    "country" : "USA"
+  } ],
+  "paymentMethos" : [ {
+    "cardNumber" : 1234567891234567,
+    "cardHolderName" : "Anil Adhikari",
+    "dateFrom" : "2018-10-19",
+    "dateTo" : "2018-10-19",
+    "cardType" : "CREDIT"
+  } ]
+}

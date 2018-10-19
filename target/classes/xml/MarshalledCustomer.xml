@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer xmlns="http://com.anil.imcs/Customer/1.0.0">
+    <customerId>0</customerId>
+    <customerAnnualSalary>0.0</customerAnnualSalary>
+</customer>

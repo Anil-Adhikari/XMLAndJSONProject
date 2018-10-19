@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer xmlns="http://com.anil.imcs/Customer/1.0.0">
+    <customerId>0</customerId>
+    <customerName>customerName</customerName>
+    <customerAddress>
+        <addressId>0</addressId>
+        <streetLine1>streetLine1</streetLine1>
+        <streetLine2>streetLine2</streetLine2>
+        <city>city</city>
+        <state>state</state>
+        <zipcode>zipcode</zipcode>
+        <country>country</country>
+    </customerAddress>
+    <customerPhone>customerPhone</customerPhone>
+    <customerDob>2001-01-01</customerDob>
+    <customerAnnualSalary>0.0</customerAnnualSalary>
+    <paymentType>
+        <cardNumber>cardNumber</cardNumber>
+        <cardName>cardName</cardName>
+        <dateFrom>2001-01-01</dateFrom>
+        <dateEnd>2001-01-01</dateEnd>
+        <cardType>CREDIT CARD</cardType>
+    </paymentType>
+</customer>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://com.anil.imcs/Customer/1.0.0" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.anil.imcs/Customer/1.0.0">
+
+    <complexType name="Customer">
+    	<sequence>
+    		<element name="customerId" type="int"></element>
+    		<element name="customerName" type="string"></element>
+    		<element name="customerAddress" type="tns:Address"></element>
+    		<element name="customerPhone" type="string"></element>
+    		<element name="customerDob" type="date"></element>
+    		<element name="customerAnnualSalary" type="float"></element>
+    		<element name="paymentType" type="tns:PaymentType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="PaymentType">
+    	<sequence>
+    		<element name="cardNumber" type="string"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateFrom" type="date"></element>
+    		<element name="dateEnd" type="date"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="CREDIT CARD"></enumeration>
+    					<enumeration value="DEBIT CARD"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Address">
+    	<sequence>
+    		<element name="addressId" type="int"></element>
+    		<element name="streetLine1" type="string"></element>
+    		<element name="streetLine2" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="state" type="string"></element>
+    		<element name="zipcode" type="string"></element>
+    		<element name="country" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Customer" type="tns:Customer"></element>
+</schema>
